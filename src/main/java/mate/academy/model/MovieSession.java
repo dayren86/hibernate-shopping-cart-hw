@@ -23,7 +23,7 @@ public class MovieSession {
     private CinemaHall cinemaHall;
     private LocalDateTime showTime;
 
-    @OneToMany
+    @OneToMany(mappedBy = "movieSession")
     private List<Ticket> tickets;
 
     public Long getId() {
